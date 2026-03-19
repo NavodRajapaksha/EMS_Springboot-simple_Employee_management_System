@@ -1,8 +1,8 @@
 package edu.bootcamp.ems.exception;
 
-public class EustomException extends  RuntimeException {
+public class CustomException extends  RuntimeException {
 
-    public EustomException(String message) {
+    public CustomException(String message) {
         super(message);
     }
 }

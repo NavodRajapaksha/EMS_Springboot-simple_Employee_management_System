@@ -1,9 +1,20 @@
 package edu.bootcamp.ems.service;
 
 import edu.bootcamp.ems.dto.EmployeeDto;
-import edu.bootcamp.ems.entity.EmployeeEntity;
+
+import java.util.List;
 
 public interface EmployeeService {
 
-    EmployeeEntity save(EmployeeDto empDto);
+    EmployeeDto save(EmployeeDto empDto);
+
+    List<EmployeeDto> getAll();
+    
+    EmployeeDto findById(Integer id);
+
+    String delete(Integer id);
+
+    EmployeeDto update(EmployeeDto employeeDto);
+
+    String updateEmail(String oldEmail, String newEmail);
 }
